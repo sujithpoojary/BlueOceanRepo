@@ -15,8 +15,8 @@ pipeline {
      
     stage('Print') {
       steps {
-        echo currentBuild.result
-        echo currentBuild.displayName
+        echo "${currentBuild.result}"
+        echo "${currentBuild.displayName}"
      }
     }
   }
