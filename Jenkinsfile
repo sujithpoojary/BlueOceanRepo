@@ -17,7 +17,7 @@ pipeline {
 
         stage('build') {
           steps {
-            build(job: 'one', propagate: true)
+            build 'one'
           }
         }
 
