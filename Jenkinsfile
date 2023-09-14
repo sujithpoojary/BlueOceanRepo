@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Init') {
       steps {
-        sleep 10
+        echo 'Hello'
       }
     }
 
