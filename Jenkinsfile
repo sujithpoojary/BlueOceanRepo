@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Validation') {
+      steps {
+        build(propagate: true, job: 'Yashida')
+      }
+    }
+
   }
 }
