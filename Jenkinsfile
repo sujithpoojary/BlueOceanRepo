@@ -12,6 +12,12 @@ pipeline {
         build(propagate: true, job: 'Yashida')
       }
     }
-
+     
+    stage('Print') {
+      steps {
+        echo currentBuild.result
+        echo currentBuild.displayName
+     }
+    }
   }
 }
